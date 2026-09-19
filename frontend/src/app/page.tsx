@@ -7,6 +7,8 @@ import DocumentViewer from '@/components/DocumentViewer';
 import ClauseDetailCard from '@/components/ClauseDetailCard';
 import { DocumentAnalysisResponse, ClauseResult } from '@/types/schema';
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
 export default function HomePage() {
   const [file, setFile] = useState<File | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
@@ -40,7 +42,7 @@ export default function HomePage() {
     formData.append('file', file);
 
     try {
-      const res = await fetch('http://localhost:8000/api/analyze', {
+      const res = await fetch(`${API_BASE_URL}/api/analyze`, {
         method: 'POST',
         body: formData,
       });
