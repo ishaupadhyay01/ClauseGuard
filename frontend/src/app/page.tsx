@@ -7,7 +7,8 @@ import DocumentViewer from '@/components/DocumentViewer';
 import ClauseDetailCard from '@/components/ClauseDetailCard';
 import { DocumentAnalysisResponse, ClauseResult } from '@/types/schema';
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+// Default to live Render backend for production zero-config deployment
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://clauseguard-140s.onrender.com';
 
 export default function HomePage() {
   const [file, setFile] = useState<File | null>(null);
