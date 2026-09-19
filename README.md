@@ -1,4 +1,8 @@
-# ClauseGuard — Legal & Insurance Clause Risk Flagger
+# ClauseGuard - Legal & Insurance Clause Risk Flagger
+
+> **Live Application (Frontend):** [https://clause-guard-ten.vercel.app](https://clause-guard-ten.vercel.app)  
+> **Live API (Backend):** [https://clauseguard-140s.onrender.com](https://clauseguard-140s.onrender.com)
+
 
 > **Hackathon Submission Project** | 24-Hour Open Innovation Hackathon  
 > **Disclaimer:** ClauseGuard flags patterns for awareness. This is not legal advice — consult a professional for decisions with real consequences.
